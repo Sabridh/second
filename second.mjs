@@ -4,10 +4,10 @@ const userInput = readline.createInterface({input, output});
 
 
 
-let dag = await userInput.question('hoeveel dagen? ');
-let uren = await userInput.question('hoeveel uren? ');
-let minuten = await userInput.question('hoeveel minuten?');
-let seconden = await userInput.question('hoeveel seconden?');
+let dag = parseFloat(await userInput.question('hoeveel dagen? '));
+let uren = parseFloat(await userInput.question('hoeveel uren? '));
+let minuten = parseFloat(await userInput.question('hoeveel minuten?'));
+let seconden = parseFloat(await userInput.question('hoeveel seconden?'));
 
 let totalseconden
 
